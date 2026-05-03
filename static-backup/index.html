@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praveen Kumar Byrisetty | SOC Analyst &amp; Cybersecurity Professional</title>
+  <meta name="description" content="Portfolio of Praveen Kumar Byrisetty — an aspiring SOC Analyst specializing in threat detection, log integrity, deception technology, and security engineering. Explore real-world cybersecurity projects with full case studies.">
+  <meta name="keywords" content="SOC Analyst, Cybersecurity, Blue Team, Threat Detection, SIEM, Portfolio, Praveen Kumar Byrisetty">
+  <meta name="author" content="Praveen Kumar Byrisetty">
+  <meta property="og:title" content="Praveen Kumar Byrisetty | SOC Analyst Portfolio">
+  <meta property="og:description" content="Real projects. Real security. Proof-driven cybersecurity portfolio showcasing threat detection, deception tech, and security engineering.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0D9488">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-accent">&lt;</span>PK<span class="nav__logo-accent">/&gt;</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about" class="nav__link" data-nav="about">About</a></li>
+        <li><a href="#projects" class="nav__link" data-nav="projects">Projects</a></li>
+        <li><a href="#skills" class="nav__link" data-nav="skills">Skills</a></li>
+        <li><a href="#journey" class="nav__link" data-nav="journey">Journey</a></li>
+        <li><a href="#contact" class="nav__link" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-menu__link" data-mobile-nav>About</a>
+    <a href="#projects" class="mobile-menu__link" data-mobile-nav>Projects</a>
+    <a href="#skills" class="mobile-menu__link" data-mobile-nav>Skills</a>
+    <a href="#journey" class="mobile-menu__link" data-mobile-nav>Journey</a>
+    <a href="#contact" class="mobile-menu__link" data-mobile-nav>Contact</a>
+  </div>
+
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero section" id="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            Open to SOC Analyst Roles
+          </div>
+
+          <h1 class="hero__name">
+            Praveen Kumar<br>
+            <span class="hero__name-accent">Byrisetty</span>
+          </h1>
+
+          <p class="hero__role">SOC Analyst · Blue Team Engineer · Security Builder</p>
+
+          <p class="hero__description">
+            I don't just study security — I build it. From tamper-evident logging systems 
+            to deception-based honeypots, I create the tools that defenders need. 
+            Every project here is proof of skill, not just a line on a résumé.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary" id="cta-projects">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              View Case Studies
+            </a>
+            <a href="#contact" class="btn btn--secondary" id="cta-contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Get in Touch
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-number" data-count="4">0</div>
+              <div class="hero__stat-label">Security Projects</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-number" data-count="3">0</div>
+              <div class="hero__stat-label">Domains Covered</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-number" data-count="10">0</div>
+              <div class="hero__stat-label">Tools Mastered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title">The story behind the security mindset</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__image-wrapper reveal reveal-delay-1">
+            <div class="about__image-glow" aria-hidden="true"></div>
+            <img 
+              src="assets/profile-avatar.png" 
+              alt="Praveen Kumar Byrisetty — SOC Analyst" 
+              class="about__image"
+              width="280"
+              height="280"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="about__text">
+            <p class="about__paragraph reveal reveal-delay-2">
+              I got into cybersecurity the way most curious minds do — by asking 
+              <strong>"what if someone breaks this?"</strong> What started as a fascination 
+              with how systems fail turned into a mission to make them resilient. I tore apart 
+              network packets before I could configure a firewall, and I was building detection 
+              logic before I knew what a SOC was.
+            </p>
+
+            <p class="about__paragraph reveal reveal-delay-3">
+              Today, I build the tools that defenders actually need. My 
+              <span class="about__highlight">Tamper-Evident Logging System</span> uses 
+              cryptographic hash chains to catch integrity violations in real-time. My 
+              <span class="about__highlight">Deception-Based Honeypot</span> lures attackers 
+              into revealing their tactics. My 
+              <span class="about__highlight">Zero-Knowledge Password Manager</span> ensures 
+              even the server never sees a plaintext credential. And my research into 
+              <span class="about__highlight">Quantum-Safe Federated Learning</span> explores 
+              how we'll defend systems when today's encryption is obsolete.
+            </p>
+
+            <p class="about__paragraph reveal reveal-delay-4">
+              I'm pursuing a career as a <strong>SOC Analyst</strong> because I believe the 
+              best defense starts with visibility — <em>if you can see it, you can stop it.</em> 
+              I don't chase certifications. I chase problems, build solutions, and document 
+              everything so others can learn from my process.
+            </p>
+
+            <div class="about__focus-areas reveal reveal-delay-5">
+              <span class="about__focus-tag">🔍 Threat Detection</span>
+              <span class="about__focus-tag">📊 Log Analysis</span>
+              <span class="about__focus-tag">🍯 Deception Tech</span>
+              <span class="about__focus-tag">🔐 Cryptographic Integrity</span>
+              <span class="about__focus-tag">🛡️ Blue Team Defense</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Projects</p>
+          <h2 class="section-title">Proof of skill, not paper</h2>
+          <p class="section-description">
+            Each project follows a full case study methodology — from identifying the problem, to building the solution, to documenting findings. Click any project to see the breakdown.
+          </p>
+        </div>
+
+        <div class="projects__grid">
+          <!-- Project 1: Tamper-Evident Logging -->
+          <article class="project-card reveal reveal-delay-1" id="project-logging">
+            <div class="project-card__icon" aria-hidden="true">🔗</div>
+            <span class="project-card__domain">Blue Team · Log Integrity</span>
+            <h3 class="project-card__title">Tamper-Evident Logging System</h3>
+            <p class="project-card__description">
+              A cryptographic hash-chain logging system that detects tampering in real-time. 
+              Built an interactive React dashboard that visualizes chain integrity — simulating 
+              alteration, deletion, and reordering attacks to prove detection capabilities.
+            </p>
+            <div class="project-card__tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SHA-256</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Hash Chains</span>
+              <span class="tech-tag">Flask</span>
+            </div>
+            <button class="project-card__link" data-toggle-case="case-logging" aria-expanded="false">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+
+            <div class="case-study" id="case-logging">
+              <div class="case-study__step">
+                <p class="case-study__step-label">Problem</p>
+                <p class="case-study__step-content">Organizations rely on log files for forensic investigations, compliance, and incident response — but logs stored in plaintext can be silently altered by malicious insiders or attackers who gain elevated access. Without integrity verification, tampered logs make investigations unreliable.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Tools &amp; Approach</p>
+                <p class="case-study__step-content">Built a Python logging engine using SHA-256 hash chaining — each log entry's hash incorporates the previous entry's hash, creating a cryptographic dependency chain. Developed a React-based dashboard for real-time chain visualization and a Flask API layer.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Process</p>
+                <p class="case-study__step-content">Implemented three tamper simulation modes: content alteration (modifying a log entry's message), deletion (removing an entry from the chain), and reordering (swapping entry positions). Each simulation triggers chain re-validation to show exactly where and how the integrity breaks.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Findings</p>
+                <p class="case-study__step-content">Any single-bit change in any log entry cascades a verification failure across all subsequent entries in the chain. The system achieves 100% detection rate for all three tamper types with visual diff comparison in the dashboard.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Results &amp; Lessons</p>
+                <p class="case-study__step-content">Delivered a fully interactive demo with before/after chain visualization. Key learning: cryptographic integrity alone isn't enough — usability of the verification interface determines whether responders can act on tamper alerts in time.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Deception-Based Honeypot -->
+          <article class="project-card reveal reveal-delay-2" id="project-honeypot">
+            <div class="project-card__icon" aria-hidden="true">🍯</div>
+            <span class="project-card__domain">Deception Tech · Threat Intel</span>
+            <h3 class="project-card__title">Deception-Based Honeypot</h3>
+            <p class="project-card__description">
+              A Flask-based deception system featuring fake login portals, dummy API endpoints, 
+              and canary files. Captures attacker behavior patterns and visualizes all 
+              unauthorized interactions through a real-time alert dashboard.
+            </p>
+            <div class="project-card__tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Chart.js</span>
+              <span class="tech-tag">Logging</span>
+            </div>
+            <button class="project-card__link" data-toggle-case="case-honeypot" aria-expanded="false">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+
+            <div class="case-study" id="case-honeypot">
+              <div class="case-study__step">
+                <p class="case-study__step-label">Problem</p>
+                <p class="case-study__step-content">Traditional perimeter defenses are reactive — they wait for attacks to hit known signatures. Organizations need proactive intelligence on attacker behavior, techniques, and entry points before real systems are compromised.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Tools &amp; Approach</p>
+                <p class="case-study__step-content">Deployed a Flask application simulating a realistic corporate environment: login pages with credential harvesting detection, dummy REST APIs that log all interaction payloads, and hidden "canary" files that trigger alerts upon access.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Process</p>
+                <p class="case-study__step-content">Implemented comprehensive request logging capturing IP addresses, user agents, request paths, timestamps, and submitted payloads. Built classification logic to categorize interactions (scanning, brute force, manual exploration) and an analytics dashboard with Chart.js.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Findings</p>
+                <p class="case-study__step-content">Discovered distinct attacker behavioral patterns: automated scanners hit API endpoints in predictable sequences, credential stuffing attempts follow username/password dictionary patterns, and canary file access correlates strongly with directory traversal attempts.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Results &amp; Lessons</p>
+                <p class="case-study__step-content">Complete alert dashboard with real-time suspicious activity visualization. Key insight: honeypots are most valuable not for catching attackers, but for understanding attacker methodology to improve real system defenses.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Password Manager -->
+          <article class="project-card reveal reveal-delay-3" id="project-password">
+            <div class="project-card__icon" aria-hidden="true">🔐</div>
+            <span class="project-card__domain">AppSec · Zero-Knowledge</span>
+            <h3 class="project-card__title">Zero-Knowledge Password Manager</h3>
+            <p class="project-card__description">
+              A full-stack password manager with client-side encryption — the server never 
+              sees plaintext credentials. Features AI-powered security intelligence, 
+              password strength analytics, and breach monitoring.
+            </p>
+            <div class="project-card__tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">AES-256</span>
+              <span class="tech-tag">AI Panel</span>
+            </div>
+            <button class="project-card__link" data-toggle-case="case-password" aria-expanded="false">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+
+            <div class="case-study" id="case-password">
+              <div class="case-study__step">
+                <p class="case-study__step-label">Problem</p>
+                <p class="case-study__step-content">Most password managers require users to trust a third-party server with their credentials. Even with server-side encryption, a database breach or rogue employee could expose secrets. Users need a zero-knowledge architecture where the server is mathematically unable to access plaintext data.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Tools &amp; Approach</p>
+                <p class="case-study__step-content">Built with React frontend, Node.js/Express backend, and PostgreSQL database. Implemented client-side AES-256-GCM encryption with a master key derived from the user's password via PBKDF2 — all encryption/decryption happens in the browser before data touches the network.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Process</p>
+                <p class="case-study__step-content">Designed the API to only receive and store encrypted blobs. Added password strength analysis with entropy scoring, reuse detection, and breach database cross-referencing. Integrated a privacy-focused AI intelligence panel that operates on client-side data without exposing credentials to any ML model.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Findings</p>
+                <p class="case-study__step-content">The zero-knowledge model adds approximately 15ms of overhead per encrypt/decrypt operation in-browser — negligible for UX. The AI panel successfully generates contextual security recommendations without any server-side access to plaintext credentials, proving AI and privacy can coexist.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Results &amp; Lessons</p>
+                <p class="case-study__step-content">Production-ready application with full authentication flow, vault management, and analytics dashboard. Key lesson: zero-knowledge design requires rethinking every feature — if the server can't read the data, every search, sort, and analytics query must be client-side, fundamentally changing system architecture.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: FLQC Quantum Crypto -->
+          <article class="project-card reveal reveal-delay-4" id="project-quantum">
+            <div class="project-card__icon" aria-hidden="true">🧬</div>
+            <span class="project-card__domain">Research · Quantum Security</span>
+            <h3 class="project-card__title">Quantum-Safe Federated Learning (FLQC)</h3>
+            <p class="project-card__description">
+              A 3-layer security architecture applying quantum E91 key distribution 
+              to federated learning for healthcare data. Proves that privacy-preserving 
+              ML training is possible even against quantum-era adversaries.
+            </p>
+            <div class="project-card__tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flower FL</span>
+              <span class="tech-tag">E91 Protocol</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Differential Privacy</span>
+            </div>
+            <button class="project-card__link" data-toggle-case="case-quantum" aria-expanded="false">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+
+            <div class="case-study" id="case-quantum">
+              <div class="case-study__step">
+                <p class="case-study__step-label">Problem</p>
+                <p class="case-study__step-content">Healthcare organizations need to train machine learning models on distributed patient data without centralizing sensitive information. Current approaches rely on classical encryption that will become vulnerable to quantum computing attacks within the next decade.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Tools &amp; Approach</p>
+                <p class="case-study__step-content">Implemented a 3-layer security architecture: E91 quantum key distribution at the Communication Layer, secure aggregation at the Aggregation Layer, and differential privacy at the Endpoint Layer. Used the Flower federated learning framework with HAM10000 dermatological image dataset.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Process</p>
+                <p class="case-study__step-content">Simulated the E91 quantum entanglement protocol for key exchange, applied noise-based differential privacy to local model updates, and implemented secure multi-party aggregation for global model computation. Built an interactive Streamlit demo UI with architecture visualizations.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Findings</p>
+                <p class="case-study__step-content">The quantum-secured model maintained comparable accuracy to unsecured baselines while providing theoretical information-theoretic security guarantees. Differential privacy introduced a controlled accuracy-privacy tradeoff that proved manageable for the healthcare use case.</p>
+              </div>
+              <div class="case-study__step">
+                <p class="case-study__step-label">Results &amp; Lessons</p>
+                <p class="case-study__step-content">Complete demonstration of quantum-resistant federated learning with interactive visualization. Key insight: post-quantum security isn't just an encryption upgrade — it requires rethinking the entire communication trust model from the ground up.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Skills</p>
+          <h2 class="section-title">SOC-ready capabilities</h2>
+          <p class="section-description">
+            Skills mapped directly to SOC Analyst and Blue Team responsibilities — 
+            validated by the projects above, not just listed on a résumé.
+          </p>
+        </div>
+
+        <div class="skills__grid">
+          <!-- Skill Group 1 -->
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <h3 class="skill-card__title">Log Analysis & SIEM</h3>
+            </div>
+            <div class="skill-card__items">
+              <div class="skill-item">
+                <span class="skill-item__name">Log Parsing & Correlation</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Hash Chain Verification</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="95"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Alert Triage & Response</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="80"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Group 2 -->
+          <div class="skill-card reveal reveal-delay-2">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 class="skill-card__title">Threat Detection</h3>
+            </div>
+            <div class="skill-card__items">
+              <div class="skill-item">
+                <span class="skill-item__name">Deception Engineering</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Behavioral Analysis</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Anomaly Detection</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="80"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Group 3 -->
+          <div class="skill-card reveal reveal-delay-3">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <h3 class="skill-card__title">Cryptography</h3>
+            </div>
+            <div class="skill-card__items">
+              <div class="skill-item">
+                <span class="skill-item__name">Symmetric Encryption</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Hash Functions & Integrity</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="95"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Quantum Key Distribution</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="75"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Group 4 -->
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="skill-card__title">Development</h3>
+            </div>
+            <div class="skill-card__items">
+              <div class="skill-item">
+                <span class="skill-item__name">Python Scripting</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="92"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">React & Node.js</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">REST API Design</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="88"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Group 5 -->
+          <div class="skill-card reveal reveal-delay-2">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <h3 class="skill-card__title">Networking & Defense</h3>
+            </div>
+            <div class="skill-card__items">
+              <div class="skill-item">
+                <span class="skill-item__name">Network Monitoring</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="82"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Honeypot Deployment</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Traffic Analysis</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="78"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Group 6 -->
+          <div class="skill-card reveal reveal-delay-3">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <h3 class="skill-card__title">Architecture & Research</h3>
+            </div>
+            <div class="skill-card__items">
+              <div class="skill-item">
+                <span class="skill-item__name">Zero-Knowledge Design</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Federated Learning</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="78"></div></div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-item__name">Security Documentation</span>
+                <div class="skill-item__bar"><div class="skill-item__fill" data-width="90"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools Arsenal -->
+        <div class="section-header reveal" style="margin-top: var(--space-20);">
+          <p class="section-label">Toolkit</p>
+          <h2 class="section-title">Tools I work with</h2>
+        </div>
+
+        <div class="tools__grid reveal">
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Python</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>React</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Node.js</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Flask</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>PostgreSQL</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Wireshark</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Git & GitHub</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Linux CLI</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Streamlit</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Chart.js</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>SQLite</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>SHA-256 / AES</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>REST APIs</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>Flower FL</span>
+          <span class="tool-pill"><span class="tool-pill__dot"></span>VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== JOURNEY SECTION ========== -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Journey</p>
+          <h2 class="section-title">How I got here</h2>
+          <p class="section-description">
+            My cybersecurity journey — from curiosity to building real defense systems.
+          </p>
+        </div>
+
+        <div class="journey__timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-item__dot" aria-hidden="true"></div>
+            <p class="timeline-item__date">Current</p>
+            <h3 class="timeline-item__title">Seeking SOC Analyst Role</h3>
+            <p class="timeline-item__description">
+              Actively pursuing SOC Analyst and Blue Team positions. Portfolio represents 
+              real, hands-on security engineering experience across detection, deception, 
+              cryptography, and application security domains.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-item__dot" aria-hidden="true"></div>
+            <p class="timeline-item__date">2025 — 2026</p>
+            <h3 class="timeline-item__title">Security Engineering Projects</h3>
+            <p class="timeline-item__description">
+              Built 4 major security projects: a tamper-evident logging system with 
+              cryptographic hash chains, a deception-based honeypot with real-time 
+              alert dashboards, a zero-knowledge password manager, and a quantum-safe 
+              federated learning research system.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-item__dot" aria-hidden="true"></div>
+            <p class="timeline-item__date">Cybersecurity Internship</p>
+            <h3 class="timeline-item__title">Hands-on Defense Assessment</h3>
+            <p class="timeline-item__description">
+              Completed internship tasks focused on log integrity verification and 
+              deception-based security. Delivered working implementations with 
+              comprehensive reports and interactive demonstration materials.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-item__dot" aria-hidden="true"></div>
+            <p class="timeline-item__date">The Beginning</p>
+            <h3 class="timeline-item__title">Curiosity → Security Mindset</h3>
+            <p class="timeline-item__description">
+              Started exploring cybersecurity through packet analysis, networking 
+              fundamentals, and asking "what if this breaks?" — the question that 
+              turned into a career mission.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="reveal">
+            <span class="status-badge">
+              <span class="status-badge__dot" aria-hidden="true"></span>
+              Available for opportunities
+            </span>
+          </div>
+
+          <h2 class="contact__title reveal reveal-delay-1">Let's build something secure</h2>
+          <p class="contact__description reveal reveal-delay-2">
+            I'm looking for SOC Analyst and Blue Team roles where I can apply my 
+            detection engineering and security building skills. If you're hiring 
+            for someone who builds, not just monitors — let's talk.
+          </p>
+
+          <div class="contact__links reveal reveal-delay-3">
+            <a href="https://github.com/praveenkumar" class="contact__link" id="contact-github" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/praveenkumar" class="contact__link" id="contact-linkedin" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:praveen@example.com" class="contact__link" id="contact-email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__text">
+          &copy; 2026 Praveen Kumar Byrisetty. 
+          Built with <span class="footer__text-accent">security</span> in mind.
+        </p>
+        <div class="footer__links">
+          <a href="#projects" class="footer__link">Projects</a>
+          <a href="#skills" class="footer__link">Skills</a>
+          <a href="#contact" class="footer__link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
