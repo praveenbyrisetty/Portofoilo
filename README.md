@@ -45,4 +45,3 @@ An immersive, dual-mode professional portfolio featuring a 3D interactive 'Hacke
    npm install
    npm run dev
    ```
-
