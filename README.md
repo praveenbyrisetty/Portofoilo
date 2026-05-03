@@ -46,21 +46,3 @@ An immersive, dual-mode professional portfolio featuring a 3D interactive 'Hacke
    npm run dev
    ```
 
-## Deployment Recommendations
-
-Since this project has a decoupled frontend and backend, the best way to deploy is to host them separately:
-
-### Deploying Frontend (e.g., Vercel, Netlify)
-1. Connect your GitHub repository to Vercel or Netlify.
-2. Set the **Root Directory** to `frontend`.
-3. The build settings should auto-detect Vite:
-   - Build command: `npm run build`
-   - Output directory: `dist`
-4. Add your backend URL to the environment variables (e.g., `VITE_API_URL`).
-
-### Deploying Backend (e.g., Railway, Render)
-1. Connect your GitHub repository to Railway or Render.
-2. Set the **Root Directory** to `backend`.
-3. Ensure you have a `requirements.txt` file in the `backend` folder.
-4. Set the Start Command to: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-5. (Optional) Configure CORS in your FastAPI app to allow requests from your deployed frontend domain.
